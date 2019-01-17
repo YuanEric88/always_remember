@@ -1,0 +1,23 @@
+# UINX command line cheetsheet
+
+## git related
+#add remote repo
+git remote add [repo name] [url]
+#allow unlated repo to merge
+git pull --rebase --allow-unrelated-histories [repo name] master
+#undo git
+rm -rf .git
+
+## python related
+#add new virtual env
+python -m venv env
+#remove current virtual env
+rm -rf env
+#activate env
+source env/bin/activate
+
+## normal command
+#tree structure of directory
+tree [foler name]
+#make the script executable
+chmod + x [script dir]
