@@ -19,5 +19,9 @@ source env/bin/activate
 ## normal command
 #tree structure of directory
 tree [foler name]
+#tree structure with filter
+tree --mathcdirs -I '<filtered folder>'
+
+##Bash script related
 #make the script executable
-chmod + x [script dir]
+chmod +x bin/bashscriptname
