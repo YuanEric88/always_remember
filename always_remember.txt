@@ -11,6 +11,7 @@ rm -rf .git
 ## python related
 #add new virtual env
 python -m venv env
+/usr/local/bin/python3 -m venv env
 #remove current virtual env
 rm -rf env
 #activate env
@@ -25,3 +26,11 @@ tree --mathcdirs -I '<filtered folder>'
 ##Bash script related
 #make the script executable
 chmod +x bin/bashscriptname
+#check the size of file
+du -h [filename]
+#unzip tar file
+tar -xvzf starter_files.tar.gz
+
+##web related
+#generate SECRET_KEY
+python3 -c 'import os; print(os.urandom(24))'
