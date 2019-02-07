@@ -7,6 +7,8 @@ git remote add [repo name] [url]
 git pull --rebase --allow-unrelated-histories [repo name] master
 #undo git
 rm -rf .git
+#remove staged file
+git reset path/to/targetfile
 
 ## python related
 #add new virtual env
@@ -22,6 +24,8 @@ source env/bin/activate
 tree [foler name]
 #tree structure with filter
 tree --mathcdirs -I '<filtered folder>'
+#zip file with tar.gz
+tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
 
 ##Bash script related
 #make the script executable
@@ -34,3 +38,9 @@ tar -xvzf starter_files.tar.gz
 ##web related
 #generate SECRET_KEY
 python3 -c 'import os; print(os.urandom(24))'
+#check is port is open
+nc -v -z [servername] [port]
+#fill out the form and click submit and get cookie
+curl --verbose --cookie-jar cookies.txt --form " " [web url]
+#send cookie along with new request
+curl --verbose --cookie cookie.txt [web url]
