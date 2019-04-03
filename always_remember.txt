@@ -5,7 +5,10 @@
 git remote add [repo name] [url]
 #allow unlated repo to merge
 git pull --rebase --allow-unrelated-histories [repo name] master
-#undo git
+#undo git add
+git reset 
+#push commits already committed on the local repo to the remote
+git push -u origin master
 rm -rf .git
 #remove staged file
 git reset path/to/targetfile
@@ -44,3 +47,31 @@ nc -v -z [servername] [port]
 curl --verbose --cookie-jar cookies.txt --form " " [web url]
 #send cookie along with new request
 curl --verbose --cookie cookie.txt [web url]
+#check IP configuiation
+ifconfig
+#look up IP address for webpage
+nslookup web.[web url]
+nslookup -type=ns [web url]
+#reverse DNS lookup
+dig -x [ip address]
+dig +short -x [ip address]
+
+
+## os
+#check all running processes on a machine
+ps -ax
+#check multiprocessing
+pgrep -lf [script name]
+#check thread
+ps -M [PID]
+#kill process
+pkill -f [process]
+
+## ssh
+#create new ssh key connected with gcloud
+ssh-keygen -t rsa -f ~/.ssh/gcloud -C [username]
+#get public key
+~/.ssh/gcloud.pub
+#connect gcloud with ssh
+ssh -i ~/.ssh/gcloud [username]@[ip address]
+

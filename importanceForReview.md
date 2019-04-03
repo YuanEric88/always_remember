@@ -32,7 +32,6 @@ Note: References in python are like pointers in C/C++ not C-style references. Th
 
 * 1, virtual method, non-virtual method and their inheritance in C++
   * Virtual methods are methods been overridden, like implementation in java, completely virtual methods are similar to interface inherience, both apply dynamic method selection, aka, dynamic binding. For non-vritual methods, they are static binding. **Never override non-virtual method!**
-
 * 2， Inheritance , Ctors and Dtors
   * Based class actor called first, folled by derived class ctor, if no explicit ctor is called for the base class, the default ctor is called.
   * Derived class dtor called first, followed by base class dtor, 
@@ -41,7 +40,17 @@ Note: References in python are like pointers in C/C++ not C-style references. Th
   * 保护继承(protected)的特点是基类的所有公有成员和保护成员都成为派生类的保护成员，并且只能被它的派生类成员函数或友元访问，基类的私有成员仍然是私有的。
   * 私有继承(private)即所有基类成员均变成派生类的私有成员，基类的私有成员仍然不能在派生类中访问。
 
+##### 4, IO stream
 
+* [link](http://www.cplusplus.com/doc/tutorial/files/)
+
+
+
+Does stack frame project to a continuous memory space in computer?
+
+can a variable(memory box) appears in stack and heap simultaneously?
+
+In multiple memory box simultaneously.
 
 
 
