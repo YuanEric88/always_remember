@@ -12,7 +12,9 @@ git push -u origin master
 rm -rf .git
 #remove staged file
 git reset path/to/targetfile
-
+# stash
+git stash
+git pop
 ## python related
 #add new virtual env
 python -m venv env
