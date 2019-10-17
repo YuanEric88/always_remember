@@ -6,7 +6,7 @@ git remote add [repo name] [url]
 #allow unlated repo to merge
 git pull --rebase --allow-unrelated-histories [repo name] master
 #undo git add
-git reset 
+git reset HEAD
 #push commits already committed on the local repo to the remote
 git push -u origin master
 rm -rf .git
@@ -14,7 +14,9 @@ rm -rf .git
 git reset path/to/targetfile
 # stash
 git stash
-git pop
+git stash pop
+# remember username and password
+git config --global credential.helper store
 ## python related
 #add new virtual env
 python -m venv env
