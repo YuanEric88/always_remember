@@ -79,3 +79,16 @@ ssh-keygen -t rsa -f ~/.ssh/gcloud -C [username]
 #connect gcloud with ssh
 ssh -i ~/.ssh/gcloud [username]@[ip address]
 
+## tmux
+#check all tmux sessions
+tmux ls
+#create a new tmux session with certain name
+tmux new -s name
+#detach current tmux
+tmux detach
+#rename certain tmux
+tmux rename -t old-name new-name
+#attach to a tmux session
+tmux attach -t name
+#kill the session
+tmux kill-session -t name
