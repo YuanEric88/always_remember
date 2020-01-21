@@ -92,3 +92,17 @@ tmux rename -t old-name new-name
 tmux attach -t name
 #kill the session
 tmux kill-session -t name
+
+## docker
+#check list of image
+docker image ls
+#remove image
+docker image rm [image id]
+#create a new container
+docker build -t [container name] /path/to/docker
+#execute a docker container
+docker exec -it  [container name] /bin/bash
+#check the process
+docker ps
+#kill process
+docker kill [pid]
