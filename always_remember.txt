@@ -98,8 +98,10 @@ tmux kill-session -t name
 docker image ls
 #remove image
 docker image rm [image id]
-#create a new container
+#create a new image
 docker build -t [container name] /path/to/docker
+#create a docker container
+docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 #execute a docker container
 docker exec -it  [container name] /bin/bash
 #check the process
