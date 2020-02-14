@@ -108,3 +108,9 @@ docker exec -it  [container name] /bin/bash
 docker ps
 #kill process
 docker kill [pid]
+
+## compress/extract files
+#compress by tar
+tar -cvzf [compressed_name] [filename need to compressed]
+#extract by tar
+tar -xvzf [compressed_file]
