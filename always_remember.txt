@@ -110,8 +110,10 @@ docker image ls
 docker image rm [image id]
 #create a new image
 docker build -t [container name] /path/to/docker
+eg docker build -t emotionclassifier /Users/hoony/cobot/demo_bot2/docker/emotionclassifier
 #create a docker container
 docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
+docker run -itd -p 5000:80 pum_inference
 #execute a docker container
 docker exec -it  [container name] /bin/bash
 #check the process
