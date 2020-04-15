@@ -126,3 +126,8 @@ docker kill [pid]
 tar -cvzf [compressed_name] [filename need to compressed]
 #extract by tar
 tar -xvzf [compressed_file]
+
+### Deep learning Framework
+## Pytorch
+#Loading weights for CPU model while trained on GPU
+torch.load('my_file.pt', map_location=lambda storage, loc: storage)
