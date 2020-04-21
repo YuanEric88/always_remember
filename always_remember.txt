@@ -80,6 +80,8 @@ pgrep -lf [script name]
 ps -M [PID]
 #kill process
 pkill -f [process]
+#check if a port is used
+lsof -i -P -n
 
 ## ssh
 #create new ssh key connected with gcloud
