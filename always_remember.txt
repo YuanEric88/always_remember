@@ -108,8 +108,14 @@ tmux kill-session -t name
 ## docker
 #check list of image
 docker image ls
+# check list of container/process
+docker ps
+docker ps -a
+docker ps -f "status=exited"
 #remove image
 docker image rm [image id]
+#system prune
+docker system prune
 #create a new image
 docker build -t [container name] /path/to/docker
 eg docker build -t emotionclassifier /Users/hoony/cobot/demo_bot2/docker/emotionclassifier
@@ -118,8 +124,6 @@ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 docker run -itd -p 5000:80 pum_inference
 #execute a docker container
 docker exec -it  [container name] /bin/bash
-#check the process
-docker ps
 #kill process
 docker kill [pid]
 
